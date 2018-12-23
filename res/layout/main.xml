@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  <ImageView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:src="@drawable/background_1px"
+    android:scaleType="fitXY"/>
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+            <ImageButton android:id="@+id/button_close"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Exit"
+              android:src="@drawable/bt_close_action"
+              android:background="@null"
+              android:paddingRight="8dip"
+              android:paddingTop="8dip"/>
+      </LinearLayout>-->
+    <ImageView
+      android:src="@drawable/logo"
+      android:scaleType="fitCenter"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:paddingLeft="5dip"
+      android:paddingRight="5dip"
+      android:paddingBottom="5dip"
+      android:paddingTop="10dip"/>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="125dip">
+    
+      
+        <ImageView android:id="@+id/on_air_img"
+          android:src="@drawable/img_on_air"
+          android:layout_width="75dip"
+          android:layout_height="75dip"
+          android:padding="5dip"/>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          android:orientation="vertical"
+          android:layout_width="fill_parent"
+          android:layout_height="125dip">
+            <TextView android:id="@+id/on_air_times"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text=""
+              android:textColor="#FFF"
+              android:textSize="12sp"/>
+            <TextView android:id="@+id/on_air_title"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="Loading..."
+              android:textColor="#FFF"
+              android:textSize="18sp"
+              android:textStyle="bold"/>
+            <TextView android:id="@+id/on_air_up_next"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text=""
+              android:textColor="#FFF"
+              android:textSize="12sp"/>
+        </LinearLayout>
+      </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:orientation="vertical"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:gravity="bottom">
+      <TextView android:id="@+id/on_air_now_playing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FFF"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        android:padding="5dip"
+        android:gravity="bottom"/>
+            
+      <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:gravity="bottom">
+        <TableRow>
+          <ImageButton android:id="@+id/button_listen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Listen Live"
+            android:src="@drawable/bt_listen_action"
+            android:background="@null"
+            android:padding="5dip"/>
+          <ImageButton android:id="@+id/button_minisite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Minisite"
+            android:src="@drawable/bt_minisite_off"
+            android:background="@null"
+            android:layout_gravity="right"
+            android:padding="5dip"/>
+          <ImageButton android:id="@+id/button_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message Studio"
+            android:src="@drawable/bt_message_off"
+            android:background="@null"
+            android:layout_gravity="right"
+            android:padding="5dip"/>
+        </TableRow>
+      </TableLayout>
+      <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          android:orientation="vertical"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center">
+          <TableRow>
+            <ImageButton android:id="@+id/button_facebook"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Facebook"
+              android:src="@drawable/bt_facebook_action"
+              android:background="@null"
+              android:paddingTop="12dip"
+              android:paddingRight="15dip"
+              android:paddingBottom="15dip"/>
+            <ImageButton android:id="@+id/button_twitter"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Twitter"
+              android:src="@drawable/bt_twitter_action"
+              android:background="@null"
+              android:paddingTop="12dip"
+              android:paddingLeft="15dip"
+              android:paddingBottom="15dip"/>
+          </TableRow>
+        </TableLayout>
+      </LinearLayout>
+    </LinearLayout>
+  </LinearLayout>
+</RelativeLayout>
